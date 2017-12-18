@@ -27,5 +27,3 @@ WORKDIR /
 
 VOLUME ["/data"]
 WORKDIR /data
-
-ENTRYPOINT ["/bin/terraform"]
