@@ -1,0 +1,14 @@
+# This references a terraform container with OCI provider from the
+# Docker Hub https://hub.docker.com/r/lucassrg/terraform-oci/
+
+box: lucassrg/terraform-oci:1217
+
+# This is the build pipeline. Pipelines are the core of wercker
+# Read more about pipelines on our dev center
+# http://devcenter.wercker.com/docs/pipelines/index.html
+build:
+  steps:
+    - script:
+        name: Terraform Plan
+        code: |
+          plan
